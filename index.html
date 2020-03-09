@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <title>Examen</title>
+    <link href="https://fonts.googleapis.com/css?family=Spartan:300,400,500|Vollkorn:400,400i,600,600i,700,700i,900,900i&display=swap" rel="stylesheet">
+    
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }  
+        body{
+            font-family: 'Vollkorn', ;
+        }
+        img{
+            width: 100%;
+        }
+    
+        nav{
+                           
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 1em 4em;
+                font-size: 12px;
+            }
+            nav .navegation a:first-child{
+                border-bottom: 1 px solid black;
+            }
+            nav a{
+                color: black;
+                margin: 0 1em 0 0;
+            }
+            nav img{
+                width: 30px;
+            }
+        .caja_img{
+              background-image: none;
+        }
+       .container-fluid{
+                display: grid;
+                grid-template: repeat(6,1fr) / repeat(4,1fr);
+                grid-gap: 10px;
+                padding: 0 1px;
+                height: 1300px; 
+            }
+            main figure:first-child{
+                grid-column: span  2;
+                grid-row: span 3;
+                z-index: -10;
+            }
+        .item-1{
+            flex-direction: column;
+            z-index: -10;
+            grid-column: span 2;
+            grid-row: span 3;
+            background-image:
+        }
+        .item-2{
+            margin: 3em;
+            font-size: 20px;
+            grid-column: span 2;
+            grid-row: span ;
+            text-align: center;
+        }
+        .item-3{
+            font-size: 15px;
+            grid-column: span 4;
+            text-align: center;
+            background-color: coral; 
+        }
+    
+         .item-4{
+            padding: 3em;
+            font-size: 20px;
+            grid-column: span 2;
+            text-align: center;
+            padding: 1em;
+            
+        }
+         .item-5{
+            padding: 3em;
+             
+            font-size: 20px;
+            grid-column: span 1;
+            text-align: center;
+            padding: 1em;
+           
+        }
+         .item-6{
+             padding: 3em;
+            font-size: 20px;
+            grid-column: span 1;
+            text-align: center;
+            padding: 1em;
+        }
+         .item-7{
+            
+            font-size: 20px;
+            grid-column: span 1;
+           
+            text-align: center;
+            padding: 1em;
+        }
+         .item-8{
+            
+            font-size: 20px;
+            grid-column: span 2;
+            
+            text-align: center;
+            padding: 1em;
+        }
+         .item-9{
+            
+            font-size: 20px;
+            grid-column: span 1;
+            
+            text-align: center;
+            padding: 1em;
+        }
+        h2{
+            padding-top: 1em;
+            margin: 1em;
+            font-size: 25px; 
+        }
+        h3{
+            padding-left: 1em;
+            padding-right: 1em;
+            margin: 1em;
+            font-size: 25px; 
+        }
+        h5{
+            font-size: 10px;
+            font-family:"Arial", "Helvetica", sans-serif;
+        }
+        p{
+            font-size: 8px;
+            font-family:"Arial", "Helvetica", sans-serif;
+        }
+        #fotos{
+                flex-grow: 1;
+                overflow: hidden;
+                width: 111%;
+                height: 111%;
+                object-fit: cover;
+                object-position: center;
+        }
+        footer{
+            margin-top: 1em;
+            padding: 2em 3em;
+            display: flex;
+            font-size: 12px;
+            background-color: gray;
+            color:white;
+            letter-spacing: 0;
+           }
+        p a{
+        color: orange;
+        border-bottom: 1px solid orange;
+        }
+           .colum1{
+               width: 33%;
+           }
+           .colum2{
+               width: 33%;
+           }
+           .colum3{
+               width: 34%;
+           }
+        .colum4{
+            width: 35%;
+        }
+        .fin{
+             padding: 1em 1em;
+            background-color: gray;
+            color:white;
+        }
+        #final{
+            margin: 1.5em;
+        }
+        @media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+                body{
+                    background: pink;
+                    font-size: 10px;
+                }
+                .container{
+                    grid-template: repeat(4,1fr) / repeat(2,1fr);
+                }
+                 figure p{
+                    color: skyblue;
+            }
+            }
+                @media only screen and (min-device-width : 481px) and (max-device-width : 1024px) {
+                    body{
+                        background-color: cornsilk;
+                    } 
+                    p{
+                    color: mediumorchid;
+            }
+                    .container{
+                    grid-template: repeat(4,1fr) / repeat(2, 1fr);
+                }
+                }     
+    </style>
+</head>
+<body>
+    <header>
+         <nav>
+               <div>
+                    <a href="#">Products</a>
+                    <a href="#">Stocklist</a>
+                    <a href="#">About us</a>
+                </div>
+                <div>
+                    <img src="img/logo.png">
+                </div>  
+                <form action="#">
+                    <a href="#"><i class="fas fa-search"></i></a>  
+                </form>      
+            </nav>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <div class="item-1">
+                <div class="caja_img">
+                    <img src="img/baixa.jpeg">
+                </div>
+                    </div>
+                <div class="item-2">
+                    <h1>Lift the blind to let in the light. A moment of calm before the day begins.</h1>
+                     <p>Feauring <a href="#">Cherry sofa</a> and <a  href="#">Kile cooffe table</a></p>
+                </div>
+                <div class="item-3">
+                    <h2>Time for Living</h2>
+                    <h3>Take time for life’s little moments. Browsing the news as you eat breakfast. Setting the table for hungry guests. Sinking in to your favourite armchair. At Tolv, your daily rituals are at the heart of our design. We make furniture to give you your best day, every day.</h3>
+                   <p>Find out more <a href="#">About us</a></p>
+               </div>
+               <div class="item-4">
+                    <img id="fotos"src="img/baixa%20(1).jpeg"> 
+                    </div>
+
+                <div class="item-5">
+                    <img id="fotos"src="img/baixa%20(2).jpeg"> 
+                </div>
+                <div class="item-6">
+                    <img id="fotos"src="img/baixa%20(3).jpeg"> 
+                </div>
+                <div class="item-7">
+                    <img id="fotos"src="img/baixa%20(4).jpeg"> 
+                </div>
+                <div class="item-8">
+                    <img id="fotos"src="img/baixa%20(5).jpeg"> 
+                </div>
+                <div class="item-9">
+                    <img id="fotos"src="img/baixa%20(6).jpeg"> 
+                </div>
+                </div>
+          </div>
+    </main>
+    <footer>
+        <div class="colum1">
+                <h5>Products:</h5>
+                <p>Lounge Chairs</p>
+                <p>Sofas</p>
+                <p>Daybeds</p>
+                <p>Poufs</p>
+                <p>Dining Chairs</p>
+                <p>Stools</p>
+                <p>Tables Desks</p>
+                <p>Storage</p>
+            </div>
+            <div class="colum2">
+               <h5>Useful information:</h5>
+                <p>Our stockists</p>
+                <p>Our designers</p>
+                <p>Product care</p>
+            </div>
+            <div class="colum3">
+                <h5>Company:</h5>
+                <p>News</p>
+                <p>About us</p>
+                <p>Contact us</p>
+            </div>
+            <div class="colum3">
+                <h5>Connect with us:</h5>
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>Blank</p>
+                <h5>Access to:</h5>
+                <p>Client login</p>
+            </div> 
+            
+    </footer>
+            <div class="fin">
+                <p id="final">All rights reserved Tolv © 2020</p>
+            </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
